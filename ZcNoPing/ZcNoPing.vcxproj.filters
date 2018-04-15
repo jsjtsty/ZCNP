@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{5b479da7-4d8d-4c16-9489-0134743c8b63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZcNoPing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Licence.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ready.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Warning.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBoxOK.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Reenter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZcNoPing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Licence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Ready.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Warning.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBoxOK.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Var.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Reenter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZcNoPing.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="ZcNoPing.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="close.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="close_hot.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="close_hot_r.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="close_pressed.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="close_r.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="next.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="next_disabled.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="next_hot.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="next_hot_r.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="AboutDialog.xml" />
+    <Xml Include="warning.xml" />
+    <Xml Include="ready.xml" />
+    <Xml Include="MessageBoxOK.xml" />
+    <Xml Include="licence.xml" />
+    <Xml Include="MainFrame.xml" />
+    <Xml Include="reenter.xml" />
+    <Xml Include="close.xml" />
+  </ItemGroup>
+</Project>

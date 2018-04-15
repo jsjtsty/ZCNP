@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="600,300" maxinfo="600,500" caption="0,0,0,37">
+  <Font name="Microsoft YaHei UI" bold="false" id="0" size="40" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="1" size="16" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="2" size="18" default="true"/>
+  <Font name="Microsoft YaHei" bold="false" id="3" size="20" default="false"/>
+  <Default name="Text" value="textcolor=&quot;#FFFFFFFF&quot;" />
+  <HorizontalLayout bkcolor="#FF3291ED">
+      <VerticalLayout>
+        <HorizontalLayout bkcolor="#FF3998FF" height="37">
+          <VerticalLayout>
+            <Text text=" ZCNP 1.0" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
+          </VerticalLayout>
+          <HorizontalLayout width="43">
+            <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
+          </HorizontalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <HorizontalLayout bkcolor="#FF267FFC" width="1" />
+          <VerticalLayout>
+            <VerticalLayout>
+              <Text float="true" pos="15,5,0,0" font="0" width="650" height="70" text="Enter Licence Code" />
+              <Text name="pwdchancesleft" float="true" pos="15,75,0,0" font="3" width="650" height="50" text="Please enter the licence code. You have 3 chances left." />
+              <Text float="true" pos="15,145,0,0" font="2" width="140" height="50" text="Licence Code:" />
+              <Edit name="password" text="" float="true" font="1" pos="145,140,0,0" width="430" height="35" password="false" />
+              <Button name="licence_submit" text="OK" float="true" pos="460,200,0,0"  textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='145' restype='png'" pushedimage="res='143' restype='png'" width="140" height="60" />
+            </VerticalLayout>
+            <HorizontalLayout bkcolor="#FF267FFC" height="1" />
+          </VerticalLayout>
+          <HorizontalLayout bkcolor="#FF267FFC" width="1" />
+        </HorizontalLayout>
+      </VerticalLayout>
+  </HorizontalLayout>
+</Window>

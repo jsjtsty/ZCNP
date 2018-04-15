@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="500,300" maxinfo="500,300" caption="0,0,0,37">
+  <Font name="Microsoft YaHei UI" bold="false" id="0" size="40" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="1" size="16" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="2" size="20" default="true"/>
+  <Default name="Text" value="textcolor=&quot;#FFFFFFFF&quot;" />
+  <VerticalLayout bkcolor="#FF3291ED">
+    <HorizontalLayout bkcolor="#FF44A3FF" height="37">
+      <HorizontalLayout bkcolor="#FF3493EF" height="37">
+        <VerticalLayout>
+          <Text text="About ZCNP" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
+        </VerticalLayout>
+        <HorizontalLayout width="43">
+          <Button name="closebtn"   tooltip="Close" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
+        </HorizontalLayout>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <VerticalLayout>
+      <Text text=" ZCNP 1.0" font="0" />
+      <HorizontalLayout height="15" />
+      <Text name="ver" text="  Version 1.0" font="2" />
+      <HorizontalLayout height="10" />
+      <Text name="iver" text="  Build 7" font="2" />
+      <HorizontalLayout height="10" />
+      <Text text="  Copyright © StyStudio 2014~2018" font="2" />
+      <HorizontalLayout height="60">
+        <HorizontalLayout />
+        <Button name="ok" width="140" tooltip="OK" text="OK" textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='145' restype='png'" pushedimage="res='143' restype='png'"/>
+      </HorizontalLayout>
+      <VerticalLayout />
+      <Text float="true" pos="120,230" width="148" height="20" text="Powered By DuiLib Engine" font="1" textcolor="#FFF2F2F2" />
+      <Button name="viewlinc" float="true" pos="268,230" width="120" height="20" text="{u}View Licence{/u}" showhtml="true" font="1" textcolor="#FFF2F2F2" />
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

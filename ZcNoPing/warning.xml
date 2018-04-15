@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="600,300" maxinfo="600,500" caption="0,0,0,37">
+  <Font name="Microsoft YaHei UI" bold="false" id="0" size="40" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="1" size="16" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="2" size="18" default="true"/>
+  <Font name="Microsoft YaHei" bold="false" id="3" size="20" default="false"/>
+  <Default name="Text" value="textcolor=&quot;#FFFFFFFF&quot;" />
+  <HorizontalLayout bkcolor="#FFFF5050">
+      <VerticalLayout>
+        <HorizontalLayout bkcolor="#FFFF3030" height="37">
+          <VerticalLayout>
+            <Text text=" ZCNP 1.0" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
+          </VerticalLayout>
+          <HorizontalLayout width="43">
+            <Button name="closebtn"   tooltip="关闭" normalimage=" res='142' restype='png' " hotimage=" res='140' restype='png' " pushedimage=" res='141' restype='png' " />
+          </HorizontalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+          <HorizontalLayout bkcolor="#FFFF3030" width="1" />
+          <VerticalLayout>
+            <VerticalLayout>
+              <Text float="true" pos="15,5,0,0" font="0" width="650" height="70" text="Warning" />
+              <Text float="true" pos="15,75,0,0" font="3" width="550" height="50" text="Starting this program may lead to bad consequences. " />
+              <Text float="true" pos="15,105,0,0" font="3" width="550" height="50" text="Do you still want to open the projection mode?"/>
+              <Button name="warning_no" text="No" float="true" pos="328,200,0,0"  textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='146' restype='png'" pushedimage="res='143' restype='png'" width="140" height="60" />
+              <Button name="warning_yes" text="Yes" float="true" pos="460,200,0,0"  textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='146' restype='png'" pushedimage="res='143' restype='png'" width="140" height="60" />
+            </VerticalLayout>
+            <HorizontalLayout bkcolor="#FFFF3030" height="1" />
+          </VerticalLayout>
+          <HorizontalLayout bkcolor="#FFFF3030" width="1" />
+        </HorizontalLayout>
+      </VerticalLayout>
+  </HorizontalLayout>
+</Window>

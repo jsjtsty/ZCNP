@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,500" sizebox="5,5,5,5" caption="0,0,0,80" mininfo="600,400" roundcorner="5,0" bordercolor="#FF000000">
+  <Font name="微软雅黑" bold="false" id="1" size="18" default="true"/>
+  <Font name="微软雅黑" bold="false" id="2" size="16" default="false"/>
+  <Font name="微软雅黑" bold="false" id="3" size="20" default="false"/>
+  <Font name="微软雅黑" bold="false" id="4" size="13" default="false"/>
+  <Font name="Arial" bold="false" id="5" size="25" default="false" />
+  <Font name="Microsoft YaHei" bold="false" id="6" size="23" default="false"/>
+  <Font name="微软雅黑" bold="false" id="7" size="27" default="false"/>
+  <Font name="微软雅黑" bold="false" id="8" size="140" default="false"/>
+  
+  <Default name="Option" value="textcolor=&quot;#FFFFFFFF&quot; font=&quot;3&quot; align=&quot;center&quot; bordercolor=&quot;#FF000000&quot; selectedbkcolor=&quot;#FF166FEC&quot; hotbkcolor=&quot;#FF1B74F2&quot;" />
+  <VerticalLayout bkcolor="#FFFFFFFF">
+    <HorizontalLayout height="37" bkcolor="#FF267FFC">
+      <VerticalLayout>
+        <Text font="2" text="ZCNP 1.0" name="titletext" textcolor="#FFFFFFFF" float="true" pos="4,7,0,0" width="130" height="30"/>
+      </VerticalLayout>
+      <HorizontalLayout width="46">
+        <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <HorizontalLayout bkcolor="#FF267FFC" height="70">
+      <HorizontalLayout name="HorizontalLayoutUI1" width="600" height="120" padding="2,2,2,2" >
+        <HorizontalLayout width="10" />
+        <Option name="OptionShow" text="Show" group="switch" width="110" selected="true" />
+        <Option name="OptionSetting" text="Settings" group="switch" width="110" />
+        <Option name="OptionAbout" text="About" width="110" group="switch" />
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <HorizontalLayout>
+      <HorizontalLayout width="1" bkcolor="#FF267FFC" />
+      <TabLayout name="switchgroup" topbordersize="1" bordercolor="#ff000000" >
+        <HorizontalLayout>
+          <Text name="text_show" text=" 赵晨没有品" font="8"/>
+        </HorizontalLayout>
+      </TabLayout>
+      <HorizontalLayout width="1" bkcolor="#FF267FFC" />
+    </HorizontalLayout>
+    <HorizontalLayout bkcolor="#FF267FFC" height="25">
+      <HorizontalLayout width="5"/>
+      <Text name="version" text="ZCNP 1.0" font="4" textcolor="#FFFFFFFF" />
+      <HorizontalLayout />
+      <Text text="StyStudio Copyright 2018" font="4" textcolor="#FFFFFFFF" width="170"/>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

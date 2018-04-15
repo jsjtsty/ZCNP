@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="350,180" maxinfo="350,180" caption="0,0,0,37">
+  <Font name="Microsoft YaHei UI" bold="false" id="0" size="40" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="1" size="16" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="2" size="18" default="true"/>
+  <VerticalLayout bkcolor="#FF3291ED">
+    <HorizontalLayout bkcolor="#FF44A3FF" height="37">
+      <VerticalLayout>
+        <Text name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="200" height="30"/>
+      </VerticalLayout>
+
+    </HorizontalLayout>
+    <HorizontalLayout height="20"/>
+    <HorizontalLayout>
+      <HorizontalLayout width="15" />
+      <Text name="Message" font="2" textcolor="#FFFFFFFF"/>
+      <HorizontalLayout width="15" />
+    </HorizontalLayout>
+    <HorizontalLayout height="60">
+      <HorizontalLayout />
+      <HorizontalLayout width="140">
+        <Button name="ok" tooltip="OK" text="OK" textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='145' restype='png'" pushedimage="res='143' restype='png'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
