@@ -25,19 +25,19 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 
 	CPaintManagerUI::SetInstance(hInstance);
 	Licence gui;
-	gui.Create(NULL, TEXT("ZCNP 1.0"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+	gui.Create(NULL, TEXT("ZCNP 1.0.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 	gui.CenterWindow();
 	gui.ShowModal();
 	Warning gui2;
-	gui2.Create(NULL, TEXT("ZCNP 1.0"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+	gui2.Create(NULL, TEXT("ZCNP 1.0.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 	gui2.CenterWindow();
 	gui2.ShowModal();
 	Ready gui3;
-	gui3.Create(NULL, TEXT("ZCNP 1.0"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+	gui3.Create(NULL, TEXT("ZCNP 1.0.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 	gui3.CenterWindow();
 	gui3.ShowModal();
 	MainFrame mf;
-	mf.Create(NULL, TEXT("ZCNP 1.0"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+	mf.Create(NULL, TEXT("ZCNP 1.0.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 	mf.CenterWindow();
 	mf.ShowModal();
 	return 0;

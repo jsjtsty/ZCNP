@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window size="350,180" maxinfo="350,180" caption="0,0,0,37">
-  <Font name="Microsoft YaHei UI" bold="false" id="0" size="40" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="0" size="40" default="false"/>
   <Font name="Microsoft YaHei" bold="false" id="1" size="16" default="false"/>
   <Font name="Microsoft YaHei" bold="false" id="2" size="18" default="true"/>
   <VerticalLayout bkcolor="#FF3291ED">

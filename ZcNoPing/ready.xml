@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window size="380,230" maxinfo="600,500" caption="0,0,0,37">
-  <Font name="Microsoft YaHei UI" bold="false" id="0" size="40" default="false"/>
+  <Font name="Microsoft YaHei" bold="false" id="0" size="40" default="false"/>
   <Font name="Microsoft YaHei" bold="false" id="1" size="16" default="false"/>
   <Font name="Microsoft YaHei" bold="false" id="2" size="18" default="true"/>
   <Font name="Microsoft YaHei" bold="false" id="3" size="20" default="false"/>
@@ -9,7 +9,7 @@
       <VerticalLayout>
         <HorizontalLayout bkcolor="#FF3998FF" height="37">
           <VerticalLayout>
-            <Text text=" ZCNP 1.0" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
+            <Text text=" ZCNP 1.0.1" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
           </VerticalLayout>
           <HorizontalLayout width="43">
             <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
