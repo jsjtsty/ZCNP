@@ -16,11 +16,11 @@
       </HorizontalLayout>
     </HorizontalLayout>
     <VerticalLayout>
-      <Text text=" ZCNP 1.0.1" font="0" />
+      <Text text=" ZCNP 1.1" font="0" />
       <HorizontalLayout height="15" />
-      <Text name="ver" text="  Version 1.0.1" font="2" />
+      <Text name="ver" text="  Version 1.1" font="2" />
       <HorizontalLayout height="10" />
-      <Text name="iver" text="  Build 8" font="2" />
+      <Text name="iver" text="  Build 9 (2018/4/30)" font="2" />
       <HorizontalLayout height="10" />
       <Text text="  Copyright © StyStudio 2014~2018" font="2" />
       <HorizontalLayout height="60">

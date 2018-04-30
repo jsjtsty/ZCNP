@@ -35,7 +35,7 @@ void Reenter::Notify(DuiLib::TNotifyUI & msg)
 				this->Close();
 			}
 			else {
-				MessageBoxOK::Show(GetHWND(), TEXT("ZCNP 1.0.1 - Wrong Code"), TEXT("Please enter a vaild licence code."));
+				MessageBoxOK::Show(GetHWND(), TEXT("ZCNP 1.1 - Wrong Code"), TEXT("Please enter a vaild licence code."));
 			}
 		}
 		else if (msg.pSender->GetName() == TEXT("closebtn"))

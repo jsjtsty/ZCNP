@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CloseDialog.h"
 #include "resource.h"
+#include "MessageBoxOK.h"
 
 using namespace DuiLib;
 using namespace std;
@@ -27,6 +28,17 @@ void CloseDialog::Notify(DuiLib::TNotifyUI & msg)
 			this->Close();
 			return;
 		}
+		else if (msg.pSender->GetName() == TEXT("close_ok"))
+		{
+			if (Licence->GetText() == TEXT("9643"))
+			{
+				exit(0);
+			}
+			else
+			{
+				MessageBoxOK::Show(this->GetHWND(), TEXT("ZCNP 1.1"), TEXT("Wrong Licence Code."));
+			}
+		}
 	}
 	__super::Notify(msg);
 }
@@ -39,5 +51,6 @@ LRESULT CloseDialog::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 void CloseDialog::InitWindow()
 {
 	SetLayeredWindowAttributes(m_hWnd, 0, 245, LWA_ALPHA);
+	Licence = static_cast<CEditUI*>(m_PaintManager.FindControl(TEXT("lc_exit")));
 }
 

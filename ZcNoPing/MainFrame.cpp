@@ -34,7 +34,7 @@ void MainFrame::Notify(DuiLib::TNotifyUI & msg)
 				COptionUI* show = static_cast<COptionUI*>(m_PaintManager.FindControl(TEXT("OptionShow")));
 				show->Selected(true);
 				AboutDialog gui3;
-				gui3.Create(NULL, TEXT("ZCNP 1.0.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+				gui3.Create(NULL, TEXT("ZCNP 1.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 				gui3.CenterWindow();
 				gui3.ShowModal();
 			}
@@ -43,7 +43,7 @@ void MainFrame::Notify(DuiLib::TNotifyUI & msg)
 				COptionUI* show = static_cast<COptionUI*>(m_PaintManager.FindControl(TEXT("OptionShow")));
 				show->Selected(true);
 				Reenter re(GetHWND());
-				re.Create(NULL, TEXT("ZCNP 1.0.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+				re.Create(NULL, TEXT("ZCNP 1.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 				re.CenterWindow();
 				re.ShowModal();
 			}
@@ -55,7 +55,7 @@ void MainFrame::Notify(DuiLib::TNotifyUI & msg)
 		if (name == TEXT("closebtn"))
 		{
 			CloseDialog dialog;
-			dialog.Create(NULL, TEXT("ZCNP 1.0.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+			dialog.Create(NULL, TEXT("ZCNP 1.1"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 			dialog.CenterWindow();
 			dialog.ShowModal();
 			return;
@@ -73,9 +73,6 @@ LRESULT MainFrame::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 			Text->SetText(i->second.GetData().c_str());
 			SetWindowPos(GetHWND(), NULL, 0, 0, i->second.GetWidth(), i->second.GetHeight(), SWP_NOZORDER | SWP_NOMOVE);
 		}
-	}
-	else if (uMsg == WM_KEYDOWN && wParam == 0x43) {
-		exit(0);
 	}
 	return __super::HandleMessage(uMsg, wParam, lParam);
 }
