@@ -9,7 +9,7 @@
       <VerticalLayout>
         <HorizontalLayout bkcolor="#FF3998FF" height="37">
           <VerticalLayout>
-            <Text text=" ZCNP 1.1.1" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
+            <Text text=" ZCNP 1.1.2" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
           </VerticalLayout>
           <HorizontalLayout width="43">
             <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
@@ -19,10 +19,10 @@
           <HorizontalLayout bkcolor="#FF267FFC" width="1" />
           <VerticalLayout>
             <VerticalLayout>
-              <Text float="true" pos="15,5,0,0" font="0" width="650" height="70" text="Exit" />
-              <Text float="true" pos="15,75,0,0" font="3" width="650" height="50" text="If you decide to quit, you must verify your licence." />
-              <Text float="true" pos="15,125,0,0" font="3" width="160" height="50" text="Licence Code:" />
-              <Edit float="true" name="lc_exit" pos="160,122,0,0" font="1" width="415" height="35" password="true" />
+              <Text float="true" pos="15,5,0,0" font="0" width="650" height="70" text="Quit" />
+              <Text float="true" pos="15,75,0,0" font="3" width="650" height="50" text="If you decide to quit, you must verify your Quit Code." />
+              <Text float="true" pos="15,125,0,0" font="3" width="160" height="50" text="Quit Code:" />
+              <Edit float="true" name="lc_exit" pos="135,122,0,0" font="1" width="435" height="35" password="true" />
               <Button name="close_ok" text="OK" float="true" pos="320,200,0,0"  textcolor="#FFFFFFFF" font="2" enabled="true" normalimage="res='143' restype='png'" hotimage="res='145' restype='png'" pushedimage="res='143' restype='png'" disabledimage="res='144' restype='png'" width="140" height="60" />
               <Button name="close_cancel" text="Cancel" float="true" pos="460,200,0,0"  textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='145' restype='png'" pushedimage="res='143' restype='png'" width="140" height="60" />
             </VerticalLayout>

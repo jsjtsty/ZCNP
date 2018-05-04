@@ -1,4 +1,4 @@
-<?xml version="1.1.1" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.1.2" encoding="utf-8" standalone="yes" ?>
 <Window size="800,500" sizebox="5,5,5,5" caption="0,0,0,80" mininfo="600,400" roundcorner="5,0" bordercolor="#FF000000">
   <Font name="微软雅黑" bold="false" id="1" size="18" default="true"/>
   <Font name="微软雅黑" bold="false" id="2" size="16" default="false"/>
@@ -13,7 +13,7 @@
   <VerticalLayout bkcolor="#FFFFFFFF">
     <HorizontalLayout height="37" bkcolor="#FF267FFC">
       <VerticalLayout>
-        <Text font="2" text="ZCNP 1.1.1" name="titletext" textcolor="#FFFFFFFF" float="true" pos="4,7,0,0" width="130" height="30"/>
+        <Text font="2" text="ZCNP 1.1.2" name="titletext" textcolor="#FFFFFFFF" float="true" pos="4,7,0,0" width="130" height="30"/>
       </VerticalLayout>
       <HorizontalLayout width="46">
         <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
@@ -38,7 +38,7 @@
     </HorizontalLayout>
     <HorizontalLayout bkcolor="#FF267FFC" height="25">
       <HorizontalLayout width="5"/>
-      <Text name="version" text="ZCNP 1.1.1" font="4" textcolor="#FFFFFFFF" />
+      <Text name="version" text="ZCNP 1.1.2" font="4" textcolor="#FFFFFFFF" />
       <HorizontalLayout />
       <Text text="StyStudio Copyright 2018" font="4" textcolor="#FFFFFFFF" width="170"/>
     </HorizontalLayout>
