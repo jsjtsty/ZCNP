@@ -1,4 +1,4 @@
-<?xml version="1.1.2" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Window size="800,500" sizebox="5,5,5,5" caption="0,0,0,80" mininfo="600,400" roundcorner="5,0" bordercolor="#FF000000">
   <Font name="微软雅黑" bold="false" id="1" size="18" default="true"/>
   <Font name="微软雅黑" bold="false" id="2" size="16" default="false"/>
