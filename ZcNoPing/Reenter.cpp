@@ -4,6 +4,8 @@
 #include <map>
 #include "PasswordData.h"
 #include "MessageBoxOK.h"
+#include "PasswordManager.h"
+#define PM PasswordManager::getInstance()
 using namespace DuiLib;
 using namespace std;
 
@@ -28,14 +30,12 @@ void Reenter::Notify(DuiLib::TNotifyUI & msg)
 		if (msg.pSender->GetName() == TEXT("rep_submit"))
 		{
 			tstring code = LicenceCode->GetText();
-			if (LicenceCodeList.count(code) == 1) {
-				extern tstring LicenceCode;
-				LicenceCode = code;
+			if (PM->setKey(code)) {
 				::SendMessage(Main, WM_UPDATETEXT, 0, 0);
 				this->Close();
 			}
 			else {
-				MessageBoxOK::Show(GetHWND(), TEXT("ZCNP 1.1.2 - Wrong Code"), TEXT("Please enter a vaild licence code."));
+				MessageBoxOK::Show(GetHWND(), TEXT("ZCNP - Wrong Code"), TEXT("Please enter a vaild licence code."));
 			}
 		}
 		else if (msg.pSender->GetName() == TEXT("closebtn"))

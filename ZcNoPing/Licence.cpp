@@ -3,6 +3,7 @@
 #include "resource.h"
 #include <map>
 #include "PasswordData.h"
+#include "PasswordManager.h"
 using namespace DuiLib;
 using namespace std;
 
@@ -27,9 +28,7 @@ void Licence::Notify(DuiLib::TNotifyUI & msg)
 		if (msg.pSender->GetName() == TEXT("licence_submit"))
 		{
 			tstring code = LicenceCode->GetText();
-			if (LicenceCodeList.count(code) == 1) {
-				extern tstring LicenceCode;
-				LicenceCode = code;
+			if (PasswordManager::getInstance()->setKey(code)) {
 				this->Close();
 			}
 			else {

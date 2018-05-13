@@ -7,6 +7,7 @@
 #include "PasswordData.h"
 #include "Reenter.h"
 #include "CloseDialog.h"
+#include "PasswordManager.h"
 
 using namespace std;
 using namespace DuiLib;
@@ -34,7 +35,7 @@ void MainFrame::Notify(DuiLib::TNotifyUI & msg)
 				COptionUI* show = static_cast<COptionUI*>(m_PaintManager.FindControl(TEXT("OptionShow")));
 				show->Selected(true);
 				AboutDialog gui3;
-				gui3.Create(NULL, TEXT("ZCNP 1.1.2"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+				gui3.Create(NULL, TEXT("ZCNP"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 				gui3.CenterWindow();
 				gui3.ShowModal();
 			}
@@ -43,7 +44,7 @@ void MainFrame::Notify(DuiLib::TNotifyUI & msg)
 				COptionUI* show = static_cast<COptionUI*>(m_PaintManager.FindControl(TEXT("OptionShow")));
 				show->Selected(true);
 				Reenter re(GetHWND());
-				re.Create(NULL, TEXT("ZCNP 1.1.2"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+				re.Create(NULL, TEXT("ZCNP"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 				re.CenterWindow();
 				re.ShowModal();
 			}
@@ -55,7 +56,7 @@ void MainFrame::Notify(DuiLib::TNotifyUI & msg)
 		if (name == TEXT("closebtn"))
 		{
 			CloseDialog dialog;
-			dialog.Create(NULL, TEXT("ZCNP 1.1.2"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
+			dialog.Create(NULL, TEXT("ZCNP"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 			dialog.CenterWindow();
 			dialog.ShowModal();
 			return;
@@ -68,11 +69,9 @@ LRESULT MainFrame::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	if (uMsg == WM_UPDATETEXT) {
 		Text = static_cast<CTextUI*>(m_PaintManager.FindControl(TEXT("text_show")));
-		if (LicenceCodeList.count(LicenceCode) == 1) {
-			map<const tstring, const PasswordData>::const_iterator i = LicenceCodeList.find(LicenceCode);
-			Text->SetText(i->second.GetData().c_str());
-			SetWindowPos(GetHWND(), NULL, 0, 0, i->second.GetWidth(), i->second.GetHeight(), SWP_NOZORDER | SWP_NOMOVE);
-		}
+		Text->SetText(PasswordManager::getInstance()->getData().GetData().c_str());
+		SetWindowPos(GetHWND(), NULL, 0, 0, PasswordManager::getInstance()->getData().GetWidth(), PasswordManager::getInstance()->getData().GetHeight()
+			, SWP_NOZORDER | SWP_NOMOVE);
 	}
 	return __super::HandleMessage(uMsg, wParam, lParam);
 }
@@ -87,14 +86,9 @@ DuiLib::CDuiString MainFrame::GetSkinFile()
 void MainFrame::InitWindow()
 {
 	Text = static_cast<CTextUI*>(m_PaintManager.FindControl(TEXT("text_show")));
-	if (LicenceCodeList.count(LicenceCode) == 1) {
-		map<const tstring, const PasswordData>::const_iterator i = LicenceCodeList.find(LicenceCode);
-		Text->SetText(i->second.GetData().c_str());
-		SetWindowPos(GetHWND(), NULL, 0, 0, i->second.GetWidth(), i->second.GetHeight(), SWP_NOZORDER | SWP_NOMOVE);
-	}
-	else {
-		exit(-1);
-	}
+	PasswordData data = PasswordManager::getInstance()->getData();
+	Text->SetText(data.GetData().c_str());
+	SetWindowPos(GetHWND(), NULL, 0, 0, data.GetWidth(), data.GetHeight(), SWP_NOZORDER | SWP_NOMOVE);
 	__super::InitWindow();
 }
 
