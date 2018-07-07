@@ -13,12 +13,12 @@ static PasswordManager* pm = nullptr;
 PasswordManager::PasswordManager()
 {
 	this->LicenceCodeList = {
-	{ "7ef251c17dcb93537a1c9e7956fad649",PasswordData(TEXT(" 赵晨没有品")) },
-	{ "1a08d7b1c63de131c7cc559d2539e2b7",PasswordData(TEXT(" 朱刚没有品")) },
-	{ "bd39e5be3f9fa89a3437c72700ccaa4d",PasswordData(TEXT("       品"),750) },
-	{ "2ec76b00d174fcdf23debe8ee8fc5a20",PasswordData(TEXT("      无品")) },
-	{ "3108b6e15f1df2bc42f95c6acb151734",PasswordData(TEXT("     ZCNP")) },
-	{ "1a7164018898c3a12af9a1cb084b6e63",PasswordData(TEXT("     JGNP")) }
+	{ "cbf58ae107f1490995be98cab8116181",PasswordData(TEXT(" 赵晨没有品")) },
+	{ "492a726b76c27117eb07c3e5f3649620",PasswordData(TEXT(" 朱刚没有品")) },
+	{ "ea96dcda7eb994afef087fdf77cf9d66",PasswordData(TEXT("       品"),750) },
+	{ "896763d1fbfd58f44f15f4d32ee69695",PasswordData(TEXT("      无品")) },
+	{ "b31a470fa23ffc490c7c1d7834c3ec13",PasswordData(TEXT("     ZCNP")) },
+	{ "ea31ff6fb0e92a95915c4768b982394d",PasswordData(TEXT("     JGNP")) }
 	};
 }
 
