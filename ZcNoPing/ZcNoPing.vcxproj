@@ -133,7 +133,7 @@
       <AdditionalDependencies>"E:\VSWorkspace\ZcNoPing\lib\DuiLib_Static_u.lib";%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
     </Link>
     <Manifest>
-      <AdditionalManifestFiles>"F:\迅雷下载\1.0.0.5 2015-8-8\萝卜宝典\萝卜宝典.exe.manifest" %(AdditionalManifestFiles)</AdditionalManifestFiles>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
