@@ -2,6 +2,8 @@
 #include "CloseDialog.h"
 #include "resource.h"
 #include "MessageBoxOK.h"
+#include <openssl/md5.h>
+#include "PasswordManager.h"
 
 using namespace DuiLib;
 using namespace std;
@@ -30,7 +32,10 @@ void CloseDialog::Notify(DuiLib::TNotifyUI & msg)
 		}
 		else if (msg.pSender->GetName() == TEXT("close_ok"))
 		{
-			if (Licence->GetText() == TEXT("9643"))
+			tstring pass = Licence->GetText().GetData();
+			PasswordManager::ByteData bd = PasswordManager::getInstance()->stringToByte(pass);
+			string encPass = PasswordManager::getInstance()->Encrypt(bd.ptr.get(), bd.byteLength);
+			if (encPass == "f78166dd4024b552911be1696cc7ae78")
 			{
 				exit(0);
 			}
