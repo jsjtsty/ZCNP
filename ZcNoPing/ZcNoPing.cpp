@@ -3,8 +3,6 @@
 
 #include "stdafx.h"
 #include "ZcNoPing.h"
-
-#include "stdafx.h"
 #include "Licence.h"
 #include "Ready.h"
 #include "Warning.h"
