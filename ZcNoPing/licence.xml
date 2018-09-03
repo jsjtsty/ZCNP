@@ -9,7 +9,7 @@
       <VerticalLayout>
         <HorizontalLayout bkcolor="#FF3998FF" height="37">
           <VerticalLayout>
-            <Text text=" ZCNP 1.4.1" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
+            <Text text=" ZCNP 1.4.2" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
           </VerticalLayout>
           <HorizontalLayout width="43">
             <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
@@ -19,8 +19,11 @@
           <HorizontalLayout bkcolor="#FF267FFC" width="1" />
           <VerticalLayout>
             <VerticalLayout>
-              <Text float="true" pos="15,5,0,0" font="0" width="650" height="70" text="Enter Licence Code" />
-              <Text name="pwdchancesleft" float="true" pos="15,75,0,0" font="3" width="650" height="50" text="Please enter the licence code. You have 3 chances left." />
+              <Text float="true" pos="15,5,0,0" font="0" width="550" height="70" text="Enter Licence Code" />
+              <HorizontalLayout float="true" pos="15,75,0,0" font="3" width="550" height="50">
+                <Text text="Please enter the licence code." width="256" />
+                <Text name="pwd_chances" text=" You have 3 chances left." width="314"/>
+              </HorizontalLayout>
               <Text float="true" pos="15,145,0,0" font="2" width="140" height="50" text="Licence Code:" />
               <Edit name="password" text="" float="true" font="1" pos="145,140,0,0" width="430" height="35" password="false" />
               <Button name="licence_submit" text="OK" float="true" pos="460,200,0,0"  textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='145' restype='png'" pushedimage="res='143' restype='png'" width="140" height="60" />

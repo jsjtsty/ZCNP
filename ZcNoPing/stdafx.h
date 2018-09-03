@@ -40,3 +40,5 @@ namespace std {
 }
 
 #define WM_UPDATETEXT WM_USER+100
+
+#define DUIRGB(r,g,b) RGB(b,g,r)
