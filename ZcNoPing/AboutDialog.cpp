@@ -3,6 +3,7 @@
 #include "resource.h"
 #include "MessageBoxOK.h"
 #include <ShellAPI.h>
+#include <openssl/crypto.h>
 using namespace DuiLib;
 
 void AboutDialog::Notify(DuiLib::TNotifyUI & msg)
@@ -46,6 +47,19 @@ DuiLib::CDuiString AboutDialog::GetSkinFile()
 
 void AboutDialog::InitWindow()
 {
+	tstring openssl_version;
+#ifdef UNICODE
+	const char* c_ver = OpenSSL_version(OPENSSL_VERSION);
+	int len = MultiByteToWideChar(CP_ACP, 0, c_ver, -1, NULL, 0);
+	wchar_t* wc_ver = new wchar_t[len];
+	MultiByteToWideChar(CP_ACP, 0, c_ver, -1, wc_ver, len);
+	openssl_version = wc_ver;
+	delete[] wc_ver;
+#else
+	openssl_version = OpenSSL_version(OPENSSL_VERSION);
+#endif
+	CTextUI* Text = static_cast<CTextUI*>(m_PaintManager.FindControl(TEXT("openssl_ver")));
+	Text->SetText((TEXT("  OpenSSL Version: ") + openssl_version).c_str());
 }
 
 DuiLib::UILIB_RESOURCETYPE AboutDialog::GetResourceType() const

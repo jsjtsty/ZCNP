@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Window size="500,300" maxinfo="500,300" caption="0,0,0,37">
+<Window size="500,330" maxinfo="500,300" caption="0,0,0,37">
   <Font name="Microsoft YaHei" bold="false" id="0" size="40" default="false"/>
   <Font name="Microsoft YaHei" bold="false" id="1" size="16" default="false"/>
   <Font name="Microsoft YaHei" bold="false" id="2" size="20" default="true"/>
@@ -8,7 +8,7 @@
     <HorizontalLayout bkcolor="#FF44A3FF" height="37">
       <HorizontalLayout bkcolor="#FF3493EF" height="37">
         <VerticalLayout>
-          <Text text="About ZCNP 1.4.3" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="150" height="30"/>
+          <Text text="About ZCNP 1.4.4" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="150" height="30"/>
         </VerticalLayout>
         <HorizontalLayout width="43">
           <Button name="closebtn"   tooltip="Close" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
@@ -18,18 +18,20 @@
     <VerticalLayout>
       <Text text=" ZCNP" font="0" />
       <HorizontalLayout height="15" />
-      <Text name="ver" text="  Version 1.4.3 , Proudly used C++" font="2" />
+      <Text name="ver" text="  Version 1.4.4 , Proudly used C++" font="2" />
       <HorizontalLayout height="10" />
-      <Text name="iver" text="  Build 18 (2018/9/4)" font="2" />
+      <Text name="iver" text="  Build 19 (2018/10/13)" font="2" />
       <HorizontalLayout height="10" />
       <Text text="  Copyright © ISLStudio ,Sty 2014~2018" font="2" />
+      <HorizontalLayout height="10" />
+      <Text name="openssl_ver" text="  OpenSSL Version: " font="2" />
       <HorizontalLayout height="60">
         <HorizontalLayout />
         <Button name="ok" width="140" tooltip="OK" text="OK" textcolor="#FFFFFFFF" font="2" normalimage="res='143' restype='png'" hotimage="res='145' restype='png'" pushedimage="res='143' restype='png'"/>
       </HorizontalLayout>
       <VerticalLayout />
-      <Text float="true" pos="10,230" width="390" height="23" text="Powered By DuiLib Engine, Licenced under GPLv3" font="1" textcolor="#FFF2F2F2" />
-      <Button name="viewlinc" float="true" pos="385,230" width="120" height="20" text="{u}View Licence{/u}" showhtml="true" font="1" textcolor="#FFF2F2F2" />
+      <Text float="true" pos="10,262" width="390" height="23" text="Powered By DuiLib Engine, Licenced under GPLv3" font="1" textcolor="#FFF2F2F2" />
+      <Button name="viewlinc" float="true" pos="385,262" width="120" height="20" text="{u}View Licence{/u}" showhtml="true" font="1" textcolor="#FFF2F2F2" />
     </VerticalLayout>
   </VerticalLayout>
 </Window>

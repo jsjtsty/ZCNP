@@ -8,6 +8,7 @@
 #include "Warning.h"
 #include "MainFrame.h"
 #include "PasswordManager.h"
+#include <openssl/crypto.h>
 
 using namespace DuiLib;
 
