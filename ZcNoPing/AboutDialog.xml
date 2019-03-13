@@ -8,7 +8,7 @@
     <HorizontalLayout bkcolor="#FF44A3FF" height="37">
       <HorizontalLayout bkcolor="#FF3493EF" height="37">
         <VerticalLayout>
-          <Text text="About ZCNP 1.4.5" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="150" height="30"/>
+          <Text text="About ZCNP 1.5" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="150" height="30"/>
         </VerticalLayout>
         <HorizontalLayout width="43">
           <Button name="closebtn"   tooltip="Close" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
@@ -18,9 +18,9 @@
     <VerticalLayout>
       <Text text=" ZCNP" font="0" />
       <HorizontalLayout height="15" />
-      <Text name="ver" text="  Version 1.4.5 , Proudly used C++" font="2" />
+      <Text name="ver" text="  Version 1.5 , Proudly used C++" font="2" />
       <HorizontalLayout height="10" />
-      <Text name="iver" text="  Build 20 (2019/3/14)" font="2" />
+      <Text name="iver" text="  Build 21 (2019/3/14)" font="2" />
       <HorizontalLayout height="10" />
       <Text text="  Copyright © ISLStudio ,Sty 2014-2019" font="2" />
       <HorizontalLayout height="10" />
