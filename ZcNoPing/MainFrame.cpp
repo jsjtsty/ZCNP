@@ -73,6 +73,9 @@ LRESULT MainFrame::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 		SetWindowPos(GetHWND(), NULL, 0, 0, PasswordManager::getInstance()->getData().GetWidth(), PasswordManager::getInstance()->getData().GetHeight()
 			, SWP_NOZORDER | SWP_NOMOVE);
 	}
+	else if (uMsg == WM_CLOSE) {
+		return TRUE;
+	}
 	return __super::HandleMessage(uMsg, wParam, lParam);
 }
 

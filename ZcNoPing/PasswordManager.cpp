@@ -13,8 +13,8 @@ static PasswordManager* pm = nullptr;
 PasswordManager::PasswordManager()
 {
 	this->LicenceCodeList = {
-	{ "cbf58ae107f1490995be98cab8116181",PasswordData(TEXT(" 赵晨没有品")) },
-	{ "492a726b76c27117eb07c3e5f3649620",PasswordData(TEXT(" 朱刚没有品")) },
+	{ "cbf58ae107f1490995be98cab8116181",PasswordData(TEXT("  ZC 没有品")) },
+	{ "492a726b76c27117eb07c3e5f3649620",PasswordData(TEXT("  JG 没有品")) },
 	{ "ea96dcda7eb994afef087fdf77cf9d66",PasswordData(TEXT("       品"),750) },
 	{ "896763d1fbfd58f44f15f4d32ee69695",PasswordData(TEXT("      无品")) },
 	{ "b31a470fa23ffc490c7c1d7834c3ec13",PasswordData(TEXT("     ZCNP")) },
