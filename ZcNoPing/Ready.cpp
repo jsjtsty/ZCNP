@@ -22,6 +22,7 @@ void Ready::Notify(DuiLib::TNotifyUI & msg)
 	{
 		if (msg.pSender->GetName() == TEXT("ready_ok"))
 		{
+			CloseAllowed = true;
 			this->Close();
 		}
 		else if (msg.pSender->GetName() == TEXT("closebtn"))
@@ -35,6 +36,11 @@ void Ready::Notify(DuiLib::TNotifyUI & msg)
 
 LRESULT Ready::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
+	if (uMsg == WM_CLOSE) {
+		if (!CloseAllowed) {
+			exit(0);
+		}
+	}
 	return __super::HandleMessage(uMsg, wParam, lParam);
 }
 

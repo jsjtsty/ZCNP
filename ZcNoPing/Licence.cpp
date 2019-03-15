@@ -42,6 +42,7 @@ void Licence::Notify(DuiLib::TNotifyUI & msg)
 		{
 			tstring code = LicenceCode->GetText();
 			if (PasswordManager::getInstance()->setKey(code)) {
+				CloseAllowed = true;
 				this->Close();
 			}
 			else {
@@ -103,6 +104,11 @@ LRESULT Licence::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 			}
 			ChancesLeft->SetTextColor(DUIRGB(255, FadeCount * 15, FadeCount * 15));
 			break;
+		}
+	}
+	else if (uMsg == WM_CLOSE) {
+		if (!CloseAllowed) {
+			exit(0);
 		}
 	}
 	return __super::HandleMessage(uMsg, wParam, lParam);

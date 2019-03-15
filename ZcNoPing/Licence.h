@@ -13,6 +13,7 @@ public:
 private:
 	DuiLib::CTextUI* ChancesLeft;
 	DuiLib::CEditUI* LicenceCode;
+	bool CloseAllowed = false;
 	int Chance = 3;
 };
 

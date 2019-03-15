@@ -10,5 +10,7 @@ public:
 	virtual void Notify(DuiLib::TNotifyUI& msg)override;
 	virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)override;
 	virtual void InitWindow()override;
+private:
+	bool CloseAllowed = false;
 };
 
