@@ -47,7 +47,7 @@ PasswordData PasswordManager::getData()
 {
 	unordered_map<string, PasswordData>::const_iterator iter = LicenceCodeList.find(encryptedKey);
 	if (iter == LicenceCodeList.cend()) {
-		throw new exception("Invaild Key.");
+		throw runtime_error("Invaild Key.");
 		return NULL;
 	}
 	return iter->second;

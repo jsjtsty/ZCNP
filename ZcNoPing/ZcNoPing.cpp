@@ -28,12 +28,10 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	gui.Create(NULL, TEXT("ZCNP"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 	gui.CenterWindow();
 	gui.ShowModal();
-	/*
 	Warning gui2;
 	gui2.Create(NULL, TEXT("ZCNP"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 	gui2.CenterWindow();
 	gui2.ShowModal();
-	*/
 	Ready gui3;
 	gui3.Create(NULL, TEXT("ZCNP"), UI_WNDSTYLE_DIALOG, WS_EX_WINDOWEDGE);
 	gui3.CenterWindow();

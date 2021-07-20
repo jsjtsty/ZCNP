@@ -5,7 +5,6 @@
 #include "PasswordData.h"
 #include "MessageBoxOK.h"
 #include "PasswordManager.h"
-#define PM PasswordManager::getInstance()
 using namespace DuiLib;
 using namespace std;
 
@@ -30,7 +29,7 @@ void Reenter::Notify(DuiLib::TNotifyUI & msg)
 		if (msg.pSender->GetName() == TEXT("rep_submit"))
 		{
 			tstring code = LicenceCode->GetText();
-			if (PM->setKey(code)) {
+			if (PasswordManager::getInstance()->setKey(code)) {
 				::SendMessage(Main, WM_UPDATETEXT, 0, 0);
 				this->Close();
 			}

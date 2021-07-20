@@ -41,7 +41,7 @@ void CloseDialog::Notify(DuiLib::TNotifyUI & msg)
 			}
 			else
 			{
-				MessageBoxOK::Show(this->GetHWND(), TEXT("ZCNP"), TEXT("Wrong Licence Code."));
+				MessageBoxOK::Show(this->GetHWND(), TEXT("ZCNP - Error"), TEXT("Wrong License Code."));
 			}
 		}
 	}

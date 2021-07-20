@@ -9,7 +9,7 @@
       <VerticalLayout>
         <HorizontalLayout bkcolor="#FF3998FF" height="37">
           <VerticalLayout>
-            <Text text=" ZCNP 1.5.1" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="4,7,0,0" width="130" height="30"/>
+            <Label text=" ZCNP 1.6" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="7,7,0,0" width="130" height="20"/>
           </VerticalLayout>
           <HorizontalLayout width="43">
             <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />

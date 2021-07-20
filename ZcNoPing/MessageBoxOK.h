@@ -16,6 +16,7 @@ private:
 	MessageBoxOK(std::tstring Title, std::tstring Message, int width = 350, int height = 180);
 	std::tstring Title, Message;
 	int width, height;
-	DuiLib::CTextUI *TextTitle, *TextMessage;
+	DuiLib::CTextUI *TextMessage;
+	DuiLib::CLabelUI* TextTitle;
 };
 

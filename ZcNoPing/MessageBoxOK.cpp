@@ -33,7 +33,7 @@ void MessageBoxOK::Notify(DuiLib::TNotifyUI & msg)
 
 void MessageBoxOK::InitWindow()
 {
-	TextTitle = dynamic_cast<CTextUI*>(m_PaintManager.FindControl(TEXT("titletext")));
+	TextTitle = dynamic_cast<CLabelUI*>(m_PaintManager.FindControl(TEXT("titletext")));
 	TextMessage = dynamic_cast<CTextUI*>(m_PaintManager.FindControl(TEXT("Message")));
 	if (width != 350 || height != 180)
 	{

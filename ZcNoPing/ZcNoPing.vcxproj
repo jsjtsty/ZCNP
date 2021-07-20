@@ -23,32 +23,32 @@
     <ProjectGuid>{D0895612-EB8C-4565-AF82-18D927435B91}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ZcNoPing</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -100,7 +100,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>E:\VSWorkspace\ZcNoPing\lib\DuiLib_Static_ud.lib;%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\DuiLib_Static_ud.lib;%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -113,7 +113,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>E:\VSWorkspace\ZcNoPing\lib\DuiLib_Static_ud_x64.lib;%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\DuiLib_Static_ud_x64.lib;%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -130,7 +130,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>"E:\VSWorkspace\ZcNoPing\lib\DuiLib_Static_u.lib";%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\DuiLib_Static_u.lib;%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
     </Link>
     <Manifest>
       <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
@@ -150,7 +150,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>"E:\VSWorkspace\ZcNoPing\lib\DuiLib_Static_u_x64.lib";%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\DuiLib_Static_u_x64.lib;%(AdditionalDependencies);libcrypto.lib;libssl.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -185,7 +185,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Licence.cpp" />
-    <ClCompile Include="Var.cpp" />
     <ClCompile Include="Warning.cpp" />
     <ClCompile Include="ZcNoPing.cpp" />
   </ItemGroup>

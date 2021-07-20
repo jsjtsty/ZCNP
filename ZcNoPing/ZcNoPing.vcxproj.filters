@@ -86,9 +86,6 @@
     <ClCompile Include="MessageBoxOK.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Var.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="PasswordData.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
