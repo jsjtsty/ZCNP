@@ -13,10 +13,10 @@
   <VerticalLayout bkcolor="#FFFFFFFF">
     <HorizontalLayout height="37" bkcolor="#FF267FFC">
       <VerticalLayout>
-        <Label font="2" text="ZCNP 1.6" name="titletext" textcolor="#FFFFFFFF" float="true" pos="7,7,0,0" width="130" height="20"/>
+        <Label font="2" text="ZCNP 1.6.1" name="titletext" textcolor="#FFFFFFFF" float="true" pos="7,7,0,0" width="130" height="20"/>
       </VerticalLayout>
       <HorizontalLayout width="46">
-        <Button name="closebtn"   tooltip="关闭" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
+        <Button name="closebtn"   tooltip="Close" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
       </HorizontalLayout>
     </HorizontalLayout>
     <HorizontalLayout bkcolor="#FF267FFC" height="70">
@@ -38,9 +38,9 @@
     </HorizontalLayout>
     <HorizontalLayout bkcolor="#FF267FFC" height="25">
       <HorizontalLayout width="5"/>
-      <Text name="version" text="ZCNP 1.6" font="4" textcolor="#FFFFFFFF" />
+      <Text name="version" text="ZCNP 1.6.1" font="4" textcolor="#FFFFFFFF" />
       <HorizontalLayout />
-      <Text text="Copyright (C) ISLStudio ,Sty 2014-2021" font="4" textcolor="#FFFFFFFF" width="257"/>
+      <Text text="Copyright (C) NulStudio 2014-2021" font="4" textcolor="#FFFFFFFF" width="230"/>
     </HorizontalLayout>
   </VerticalLayout>
 </Window>

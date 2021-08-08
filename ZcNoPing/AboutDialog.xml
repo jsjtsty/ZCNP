@@ -8,7 +8,7 @@
     <HorizontalLayout bkcolor="#FF44A3FF" height="37">
       <HorizontalLayout bkcolor="#FF3493EF" height="37">
         <VerticalLayout>
-          <Label text="About ZCNP 1.6" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="7,7,0,0" width="150" height="20"/>
+          <Label text="About ZCNP 1.6.1" name="titletext" textcolor="#FFFFFFFF" font="1" float="true" pos="7,7,0,0" width="150" height="20"/>
         </VerticalLayout>
         <HorizontalLayout width="43">
           <Button name="closebtn"   tooltip="Close" normalimage=" res='138' restype='png' " hotimage=" res='139' restype='png' " pushedimage=" res='141' restype='png' " />
@@ -18,11 +18,11 @@
     <VerticalLayout>
       <Text text=" ZCNP" font="0" />
       <HorizontalLayout height="15" />
-      <Text name="ver" text="  Version 1.6" font="2" />
+      <Text name="ver" text="  Version 1.6.1" font="2" />
       <HorizontalLayout height="10" />
-      <Text name="iver" text="  Build 22 (2021/7/20)" font="2" />
+      <Text name="iver" text="  Build 23 (2021/8/9)" font="2" />
       <HorizontalLayout height="10" />
-      <Text text="  Copyright © ISLStudio ,Sty 2014-2021" font="2" />
+      <Text text="  Copyright © NulStudio 2014-2021" font="2" />
       <HorizontalLayout height="10" />
       <Text name="openssl_ver" text="  OpenSSL Version: " font="2" />
       <HorizontalLayout height="60">
